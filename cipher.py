@@ -3,8 +3,8 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 
 
 # Variable used for the while loop below
-
 cipher_complete = False
+
 while cipher_complete == False:
 # Inputs which will be called later in the code to sort through the list above and either encode/decode the 
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
@@ -15,18 +15,24 @@ while cipher_complete == False:
     def encrypt(plain_text, shift_amount):
         cipher_text = ""
         for letter in plain_text:
-            position = alphabet.index(letter)
-            new_position = position + shift_amount
-            cipher_text += alphabet[new_position]
+            if letter in alphabet:
+                position = alphabet.index(letter)
+                new_position = position + shift_amount
+                cipher_text += alphabet[new_position]
+            else:
+                cipher_text += letter
         print(f"The encoded text is {cipher_text}")
 
 # Function to decrypt the message
     def decrypt(textmsg, secondshift):
         decoded_text = ""
         for items in textmsg:
-            secposition = alphabet.index(items)
-            newest_position = secposition - secondshift
-            decoded_text += alphabet[newest_position]
+            if items in alphabet:
+                secposition = alphabet.index(items)
+                newest_position = secposition - secondshift
+                decoded_text += alphabet[newest_position]
+            else:
+                decoded_text += items
         print(f"The decoded text is {decoded_text}") 
     
 # Function to either exit/continue in the loop
