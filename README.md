@@ -23,34 +23,6 @@ Utilized git for version control and code management. Download for your OS below
 - [Download for Mac](https://git-scm.com/download/mac)
 - [Download for Linux](https://git-scm.com/download/linux)
 
-## Key Functions Utilized 
+## How it Runs 🖥️
 
-```python
-
-# Function for Encryption
-def encrypt(plain_text, shift_amount):
-        cipher_text = ""
-        for letter in plain_text:
-            position = alphabet.index(letter)
-            new_position = position + shift_amount
-            cipher_text += alphabet[new_position]
-        print(f"The encoded text is {cipher_text}")
-
-# Function for Decryption
-def decrypt(textmsg, secondshift):
-        decoded_text = ""
-        for items in textmsg:
-            secposition = alphabet.index(items)
-            newest_position = secposition - secondshift
-            decoded_text += alphabet[newest_position]
-        print(f"The decoded text is {decoded_text}") 
-
-# Function for Re-Execution
-def choice():
-        global cipher_complete # Global specifies the variable outside this for loop. This is needed to escape the cipher
-        choice = input("Would you like to run this cipher again? Type 'yes' or 'no':\n").lower()
-        if choice == "no":
-            print("The cipher program has now completed.")
-            cipher_complete = True
-
-```
+![Screenshot 2024-07-17 013527](https://github.com/user-attachments/assets/31b12514-770b-412b-b71e-a7897d52ad0f)
