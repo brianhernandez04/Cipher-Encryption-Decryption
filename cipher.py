@@ -1,6 +1,8 @@
 # List that stores the letters needed. Alphabet was inputted twice in order to account for the Invalid Range error that occured.
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
+
+# Variable used for the while loop below
 cipher_complete = False
 
 while cipher_complete == False:
@@ -27,7 +29,7 @@ while cipher_complete == False:
             decoded_text += alphabet[newest_position]
         print(f"The decoded text is {decoded_text}") 
     
-
+# Function to either exit/continue in the loop
     def choice():
         global cipher_complete # Global specifies the variable outside this for loop. This is needed to escape the cipher
         choice = input("Would you like to run this cipher again? Type 'yes' or 'no':\n").lower()
@@ -36,7 +38,7 @@ while cipher_complete == False:
             cipher_complete = True
             
 
-
+# Calls the appropriate functions to execute the cipher program and exit loop if neeeded.
     if direction == "encode":
         encrypt(plain_text=text, shift_amount=shift)
         choice()   
