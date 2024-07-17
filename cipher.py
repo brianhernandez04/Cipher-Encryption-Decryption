@@ -21,7 +21,7 @@ while cipher_complete == False:
                 cipher_text += alphabet[new_position]
             else:
                 cipher_text += letter
-        print(f"The encoded text is {cipher_text}")
+        print(f"The encoded text is: {cipher_text}")
 
 # Function to decrypt the message
     def decrypt(textmsg, secondshift):
@@ -33,7 +33,7 @@ while cipher_complete == False:
                 decoded_text += alphabet[newest_position]
             else:
                 decoded_text += items
-        print(f"The decoded text is {decoded_text}") 
+        print(f"The decoded text is: {decoded_text}") 
     
 # Function to either exit/continue in the loop
     def choice():
