@@ -2,7 +2,8 @@
 
 This project aimed to replicate the infamous caesar cipher. The program shifts letters in a message to make it unreadable if intercepted. To decrypt, the receiver reverses the shift. 
 
-Python Familiarities:
+<h4>Python Familiarities 🐍</h4>
+
 - Variables
 - Data Types
 - Functions
@@ -10,11 +11,11 @@ Python Familiarities:
 - Loops
 - Control Statements
 
-## Learn More
+## Learn More 🧠
 
 Learn more about the [Ceasar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher) 
 
-## Version Control
+## Version Control ⬇️
 
 Utilized git for version control and code management. Download for your OS below:
 
@@ -22,7 +23,7 @@ Utilized git for version control and code management. Download for your OS below
 - [Download for Mac](https://git-scm.com/download/mac)
 - [Download for Linux](https://git-scm.com/download/linux)
 
-## Key Functions Utilized
+## Key Functions Utilized 
 
 ```python
 
