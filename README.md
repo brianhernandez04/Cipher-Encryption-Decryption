@@ -12,17 +12,17 @@ Python Familiarities:
 
 ## Learn More
 
-Learn more about the ceasar cipher [HERE](https://en.wikipedia.org/wiki/Caesar_cipher) 
+Learn more about the [Ceasar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher) 
 
 ## Version Control
 
 Utilized git for version control and code management. Download for your OS below:
 
-- {Download for Windows}(https://git-scm.com/download/win)
-- {Download for Mac}(https://git-scm.com/download/mac)
-- {Download for Linux}(https://git-scm.com/download/linux)
+- [Download for Windows](https://git-scm.com/download/win)
+- [Download for Mac](https://git-scm.com/download/mac)
+- [Download for Linux](https://git-scm.com/download/linux)
 
-## Code 
+## Key Functions Utilized
 
 ```python
 
@@ -51,13 +51,5 @@ def choice():
         if choice == "no":
             print("The cipher program has now completed.")
             cipher_complete = True
-
-# Control statement that calls the appropriate functions to execute the cipher program and exit the loop if neeeded.
-    if direction == "encode":
-        encrypt(plain_text=text, shift_amount=shift)
-        choice()   
-    else:
-        decrypt(textmsg=text, secondshift=shift)
-        choice()
 
 ```
