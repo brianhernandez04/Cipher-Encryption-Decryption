@@ -26,3 +26,5 @@ Utilized git for version control and code management. Download for your OS below
 ## How it Runs 🖥️
 
 ![Screenshot 2024-07-17 013527](https://github.com/user-attachments/assets/31b12514-770b-412b-b71e-a7897d52ad0f)
+
+Completedd by: Brian Hernandez
